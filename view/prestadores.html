@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terra da Esperança – Prestadores</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="logo-icon">🌱</div>
+      <h2>Terra da<br>Esperança</h2>
+      <span>Sistema de Gestão</span>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-section">Principal</div>
+      <a href="dashboard.html"  class="nav-link"><span class="icon">📊</span> Dashboard</a>
+      <a href="acolhidos.html"  class="nav-link"><span class="icon">🏠</span> Acolhidos</a>
+      <a href="voluntarios.html" class="nav-link"><span class="icon">👥</span> Voluntários</a>
+      <a href="relatorios.html" class="nav-link"><span class="icon">📋</span> Relatórios</a>
+      <div class="nav-section">Operacional</div>
+      <a href="escala.html"      class="nav-link"><span class="icon">📅</span> Escala</a>
+      <a href="prestadores.html" class="nav-link active"><span class="icon">🔧</span> Prestadores</a>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <div class="user-avatar">AD</div>
+        <div>
+          <div class="user-name">Admin</div>
+          <div class="user-role">Administrador</div>
+        </div>
+      </div>
+      <a href="index.html" class="logout-link">→ Sair do sistema</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <div class="topbar-title">Prestadores de Serviço</div>
+        <div class="topbar-subtitle">Empresas e serviços prestados à instituição</div>
+      </div>
+      <a href="cadastrar-prestador.html" class="btn btn-primary">+ Novo Prestador</a>
+    </div>
+
+    <!-- Tabs -->
+    <div style="display:flex;gap:4px;margin-bottom:24px;border-bottom:2px solid var(--areia-dark);">
+      <a href="prestadores.html" style="padding:10px 18px;font-size:14px;font-weight:500;color:var(--terra);border-bottom:2px solid var(--terra);margin-bottom:-2px;text-decoration:none;">Prestadores</a>
+      <a href="servicos.html"    style="padding:10px 18px;font-size:14px;font-weight:400;color:var(--text-muted);text-decoration:none;">Serviços Registrados</a>
+    </div>
+
+    <div class="section-box">
+      <div class="section-box-header">
+        <h3>Empresas Cadastradas</h3>
+        <input type="text" placeholder="🔍  Buscar prestador..." style="width:220px;"/>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Razão Social</th>
+            <th>CNPJ</th>
+            <th>Tipo de Serviço</th>
+            <th>Telefone</th>
+            <th>Email</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>TechSolv Informática Ltda.</strong></td>
+            <td>12.345.678/0001-90</td>
+            <td>TI</td>
+            <td>(11) 3001-2345</td>
+            <td>contato@techsolv.com</td>
+            <td>
+              <a href="servicos.html" class="btn btn-secondary btn-sm">Ver serviços</a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Elétrica Segura ME</strong></td>
+            <td>98.765.432/0001-11</td>
+            <td>Manutenção Elétrica</td>
+            <td>(11) 3002-3456</td>
+            <td>eletricasegura@email.com</td>
+            <td>
+              <a href="servicos.html" class="btn btn-secondary btn-sm">Ver serviços</a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Construbem Obras</strong></td>
+            <td>55.444.333/0001-22</td>
+            <td>Manutenção Predial</td>
+            <td>(11) 3003-4567</td>
+            <td>contato@construbem.com</td>
+            <td>
+              <a href="servicos.html" class="btn btn-secondary btn-sm">Ver serviços</a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>CleanPro Higienização</strong></td>
+            <td>33.222.111/0001-44</td>
+            <td>Limpeza e Higienização</td>
+            <td>(11) 3004-5678</td>
+            <td>cleanpro@email.com</td>
+            <td>
+              <a href="servicos.html" class="btn btn-secondary btn-sm">Ver serviços</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terra da Esperança – Registrar Horário</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="logo-icon">🌱</div>
+      <h2>Terra da<br>Esperança</h2>
+      <span>Sistema de Gestão</span>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-section">Principal</div>
+      <a href="dashboard.html"  class="nav-link"><span class="icon">📊</span> Dashboard</a>
+      <a href="acolhidos.html"  class="nav-link"><span class="icon">🏠</span> Acolhidos</a>
+      <a href="voluntarios.html" class="nav-link"><span class="icon">👥</span> Voluntários</a>
+      <a href="relatorios.html" class="nav-link"><span class="icon">📋</span> Relatórios</a>
+      <div class="nav-section">Operacional</div>
+      <a href="escala.html"      class="nav-link active"><span class="icon">📅</span> Escala</a>
+      <a href="prestadores.html" class="nav-link"><span class="icon">🔧</span> Prestadores</a>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <div class="user-avatar">AD</div>
+        <div>
+          <div class="user-name">Admin</div>
+          <div class="user-role">Administrador</div>
+        </div>
+      </div>
+      <a href="index.html" class="logout-link">→ Sair do sistema</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <div class="topbar-title">Registrar Horário</div>
+        <div class="topbar-subtitle"><a href="escala.html" style="color:var(--terra);text-decoration:none;">← Voltar para Escala</a></div>
+      </div>
+    </div>
+
+    <div class="section-box" style="max-width:600px;">
+      <div class="section-box-header">
+        <h3>Disponibilidade de Horário</h3>
+      </div>
+
+      <div class="form-grid">
+        <div class="form-group full">
+          <label>Voluntário *</label>
+          <select>
+            <option>ana.rocha – Ana Paula Rocha</option>
+            <option>carlos.melo – Carlos Eduardo Melo</option>
+            <option>roberto.fig – Roberto Figueiredo</option>
+            <option>julia.lopes – Júlia Lopes Ferraz</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Data *</label>
+          <input type="date" value="2026-04-23" />
+        </div>
+        <div class="form-group">
+          <label>Data Final (recorrência)</label>
+          <input type="date" />
+        </div>
+        <div class="form-group">
+          <label>Horário de Início *</label>
+          <input type="time" value="08:00" />
+        </div>
+        <div class="form-group">
+          <label>Horário de Término *</label>
+          <input type="time" value="17:00" />
+        </div>
+        <div class="form-group full">
+          <label>Observação</label>
+          <input type="text" placeholder="Ex: Somente atendimento clínico" />
+        </div>
+      </div>
+
+      <div class="form-footer">
+        <a href="escala.html" class="btn btn-primary">Registrar na Escala</a>
+        <a href="escala.html" class="btn btn-secondary">Cancelar</a>
+      </div>
+    </div>
+  </main>
+
+</div>
+</body>
+</html>

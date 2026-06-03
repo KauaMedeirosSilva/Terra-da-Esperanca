@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terra da Esperança – Voluntários</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="logo-icon">🌱</div>
+      <h2>Terra da<br>Esperança</h2>
+      <span>Sistema de Gestão</span>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-section">Principal</div>
+      <a href="dashboard.html"  class="nav-link"><span class="icon">📊</span> Dashboard</a>
+      <a href="acolhidos.html"  class="nav-link"><span class="icon">🏠</span> Acolhidos</a>
+      <a href="voluntarios.html" class="nav-link active"><span class="icon">👥</span> Voluntários</a>
+      <a href="relatorios.html" class="nav-link"><span class="icon">📋</span> Relatórios</a>
+      <div class="nav-section">Operacional</div>
+      <a href="escala.html"      class="nav-link"><span class="icon">📅</span> Escala</a>
+      <a href="prestadores.html" class="nav-link"><span class="icon">🔧</span> Prestadores</a>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <div class="user-avatar">AD</div>
+        <div>
+          <div class="user-name">Admin</div>
+          <div class="user-role">Administrador</div>
+        </div>
+      </div>
+      <a href="index.html" class="logout-link">→ Sair do sistema</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <div class="topbar-title">Voluntários</div>
+        <div class="topbar-subtitle">Gerencie os voluntários da instituição</div>
+      </div>
+      <a href="cadastrar-voluntario.html" class="btn btn-primary">+ Novo Voluntário</a>
+    </div>
+
+    <div class="section-box">
+      <div class="section-box-header">
+        <h3>Lista de Voluntários</h3>
+        <input type="text" placeholder="🔍  Buscar voluntário..." style="width:240px;"/>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Login</th>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>Contato</th>
+            <th>Formação</th>
+            <th>Status</th>
+            <th>Acesso</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>ana.rocha</code></td>
+            <td>Ana Paula Rocha</td>
+            <td>***.***.012-34</td>
+            <td>(11) 98001-1234</td>
+            <td>Psicologia</td>
+            <td><span class="badge badge-ativo">Ativo</span></td>
+            <td><span class="badge badge-acolhido">Voluntário</span></td>
+          </tr>
+          <tr>
+            <td><code>carlos.melo</code></td>
+            <td>Carlos Eduardo Melo</td>
+            <td>***.***.567-89</td>
+            <td>(11) 97002-2345</td>
+            <td>Serviço Social</td>
+            <td><span class="badge badge-ativo">Ativo</span></td>
+            <td><span class="badge badge-acolhido">Voluntário</span></td>
+          </tr>
+          <tr>
+            <td><code>roberto.fig</code></td>
+            <td>Roberto Figueiredo</td>
+            <td>***.***.321-00</td>
+            <td>(11) 96003-3456</td>
+            <td>Medicina</td>
+            <td><span class="badge badge-ativo">Ativo</span></td>
+            <td><span class="badge badge-acolhido">Voluntário</span></td>
+          </tr>
+          <tr>
+            <td><code>julia.lopes</code></td>
+            <td>Júlia Lopes Ferraz</td>
+            <td>***.***.654-11</td>
+            <td>(11) 95004-4567</td>
+            <td>Fisioterapia</td>
+            <td><span class="badge badge-ativo">Ativo</span></td>
+            <td><span class="badge badge-acolhido">Voluntário</span></td>
+          </tr>
+          <tr>
+            <td><code>marcos.admin</code></td>
+            <td>Marcos Vinícius Costa</td>
+            <td>***.***.987-22</td>
+            <td>(11) 94005-5678</td>
+            <td>Administração</td>
+            <td><span class="badge badge-ativo">Ativo</span></td>
+            <td><span class="badge" style="background:#f0e0ff;color:#6b20a3;">Admin</span></td>
+          </tr>
+          <tr>
+            <td><code>silvia.ant</code></td>
+            <td>Sílvia Antunes</td>
+            <td>***.***.111-33</td>
+            <td>(11) 93006-6789</td>
+            <td>Enfermagem</td>
+            <td><span class="badge badge-inativo">Inativo</span></td>
+            <td><span class="badge badge-acolhido">Voluntário</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+</div>
+</body>
+</html>

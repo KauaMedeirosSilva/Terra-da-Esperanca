@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terra da Esperança – Acolhidos</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="logo-icon">🌱</div>
+      <h2>Terra da<br>Esperança</h2>
+      <span>Sistema de Gestão</span>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-section">Principal</div>
+      <a href="dashboard.html"  class="nav-link"><span class="icon">📊</span> Dashboard</a>
+      <a href="acolhidos.html"  class="nav-link active"><span class="icon">🏠</span> Acolhidos</a>
+      <a href="voluntarios.html" class="nav-link"><span class="icon">👥</span> Voluntários</a>
+      <a href="relatorios.html" class="nav-link"><span class="icon">📋</span> Relatórios</a>
+      <div class="nav-section">Operacional</div>
+      <a href="escala.html"      class="nav-link"><span class="icon">📅</span> Escala</a>
+      <a href="prestadores.html" class="nav-link"><span class="icon">🔧</span> Prestadores</a>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <div class="user-avatar">AD</div>
+        <div>
+          <div class="user-name">Admin</div>
+          <div class="user-role">Administrador</div>
+        </div>
+      </div>
+      <a href="index.html" class="logout-link">→ Sair do sistema</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <div class="topbar-title">Acolhidos</div>
+        <div class="topbar-subtitle">Gerencie os participantes da instituição</div>
+      </div>
+      <a href="cadastrar-acolhido.html" class="btn btn-primary">+ Novo Acolhido</a>
+    </div>
+
+    <!-- Filtros rápidos -->
+    <div style="display:flex; gap:10px; margin-bottom:20px; flex-wrap:wrap;">
+      <button class="btn btn-primary btn-sm">Todos (31)</button>
+      <button class="btn btn-secondary btn-sm">Acolhidos (24)</button>
+      <button class="btn btn-secondary btn-sm">Em espera (7)</button>
+      <button class="btn btn-secondary btn-sm">Reinseridos (12)</button>
+      <button class="btn btn-secondary btn-sm">Inativos (5)</button>
+    </div>
+
+    <div class="section-box">
+      <div class="section-box-header">
+        <h3>Lista de Acolhidos</h3>
+        <input type="text" placeholder="🔍  Buscar por nome ou registro..." style="width:260px;"/>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Registro</th>
+            <th>Nome Completo</th>
+            <th>Contato</th>
+            <th>Data de Entrada</th>
+            <th>Status</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>#AC-0024</code></td>
+            <td>João Carlos Ferreira</td>
+            <td>(11) 99234-5678</td>
+            <td>20/04/2026</td>
+            <td><span class="badge badge-acolhido">Acolhido</span></td>
+            <td>
+              <a href="relatorios.html" class="btn btn-secondary btn-sm">Relatórios</a>
+            </td>
+          </tr>
+          <tr>
+            <td><code>#AC-0023</code></td>
+            <td>Maria Aparecida Santos</td>
+            <td>—</td>
+            <td>15/04/2026</td>
+            <td><span class="badge badge-acolhido">Acolhido</span></td>
+            <td>
+              <a href="relatorios.html" class="btn btn-secondary btn-sm">Relatórios</a>
+            </td>
+          </tr>
+          <tr>
+            <td><code>#AC-0022</code></td>
+            <td>Pedro Oliveira Lima</td>
+            <td>(11) 98765-4321</td>
+            <td>10/04/2026</td>
+            <td><span class="badge badge-ativo">Reinserido</span></td>
+            <td>
+              <a href="relatorios.html" class="btn btn-secondary btn-sm">Relatórios</a>
+            </td>
+          </tr>
+          <tr>
+            <td><code>#AC-0021</code></td>
+            <td>Francisca Nunes Costa</td>
+            <td>(11) 91234-0000</td>
+            <td>02/04/2026</td>
+            <td><span class="badge badge-espera">Em espera</span></td>
+            <td>
+              <a href="relatorios.html" class="btn btn-secondary btn-sm">Relatórios</a>
+            </td>
+          </tr>
+          <tr>
+            <td><code>#AC-0020</code></td>
+            <td>Lucas Henrique Barros</td>
+            <td>—</td>
+            <td>28/03/2026</td>
+            <td><span class="badge badge-acolhido">Acolhido</span></td>
+            <td>
+              <a href="relatorios.html" class="btn btn-secondary btn-sm">Relatórios</a>
+            </td>
+          </tr>
+          <tr>
+            <td><code>#AC-0019</code></td>
+            <td>Antônia Ribeiro Alves</td>
+            <td>(11) 97654-3210</td>
+            <td>20/03/2026</td>
+            <td><span class="badge badge-inativo">Inativo</span></td>
+            <td>
+              <a href="relatorios.html" class="btn btn-secondary btn-sm">Relatórios</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+</div>
+</body>
+</html>

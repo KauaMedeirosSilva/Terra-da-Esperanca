@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terra da Esperança – Novo Relatório</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="logo-icon">🌱</div>
+      <h2>Terra da<br>Esperança</h2>
+      <span>Sistema de Gestão</span>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-section">Principal</div>
+      <a href="dashboard.html"  class="nav-link"><span class="icon">📊</span> Dashboard</a>
+      <a href="acolhidos.html"  class="nav-link"><span class="icon">🏠</span> Acolhidos</a>
+      <a href="voluntarios.html" class="nav-link"><span class="icon">👥</span> Voluntários</a>
+      <a href="relatorios.html" class="nav-link active"><span class="icon">📋</span> Relatórios</a>
+      <div class="nav-section">Operacional</div>
+      <a href="escala.html"      class="nav-link"><span class="icon">📅</span> Escala</a>
+      <a href="prestadores.html" class="nav-link"><span class="icon">🔧</span> Prestadores</a>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <div class="user-avatar">AD</div>
+        <div>
+          <div class="user-name">Admin</div>
+          <div class="user-role">Administrador</div>
+        </div>
+      </div>
+      <a href="index.html" class="logout-link">→ Sair do sistema</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <div class="topbar-title">Novo Relatório</div>
+        <div class="topbar-subtitle"><a href="relatorios.html" style="color:var(--terra);text-decoration:none;">← Voltar para Relatórios</a></div>
+      </div>
+    </div>
+
+    <div class="section-box" style="max-width:700px;">
+      <div class="section-box-header">
+        <h3>Registro Diário</h3>
+        <span style="font-size:12px;color:var(--text-muted);">* Campo obrigatório</span>
+      </div>
+
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Registro do Acolhido *</label>
+          <select>
+            <option>Selecione o acolhido...</option>
+            <option>#AC-0024 – João Carlos Ferreira</option>
+            <option>#AC-0023 – Maria Aparecida Santos</option>
+            <option>#AC-0022 – Pedro Oliveira Lima</option>
+            <option>#AC-0020 – Lucas Henrique Barros</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Data *</label>
+          <input type="date" value="2026-04-23" />
+        </div>
+        <div class="form-group full">
+          <label>Detalhamento *</label>
+          <textarea style="min-height:140px;" placeholder="Descreva as atividades, comportamentos e observações do dia referentes ao acolhido..."></textarea>
+        </div>
+        <div class="form-group full">
+          <label>Conclusão Final (opcional)</label>
+          <select>
+            <option>Selecione uma conclusão...</option>
+            <option>Evolução positiva</option>
+            <option>Estável</option>
+            <option>Acompanhar</option>
+            <option>Requer atenção</option>
+            <option>Em processo</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-footer">
+        <a href="relatorios.html" class="btn btn-primary">Registrar Relatório</a>
+        <a href="relatorios.html" class="btn btn-secondary">Cancelar</a>
+      </div>
+    </div>
+  </main>
+
+</div>
+</body>
+</html>

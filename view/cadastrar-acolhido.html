@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terra da Esperança – Cadastrar Acolhido</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="logo-icon">🌱</div>
+      <h2>Terra da<br>Esperança</h2>
+      <span>Sistema de Gestão</span>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-section">Principal</div>
+      <a href="dashboard.html"  class="nav-link"><span class="icon">📊</span> Dashboard</a>
+      <a href="acolhidos.html"  class="nav-link active"><span class="icon">🏠</span> Acolhidos</a>
+      <a href="voluntarios.html" class="nav-link"><span class="icon">👥</span> Voluntários</a>
+      <a href="relatorios.html" class="nav-link"><span class="icon">📋</span> Relatórios</a>
+      <div class="nav-section">Operacional</div>
+      <a href="escala.html"      class="nav-link"><span class="icon">📅</span> Escala</a>
+      <a href="prestadores.html" class="nav-link"><span class="icon">🔧</span> Prestadores</a>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <div class="user-avatar">AD</div>
+        <div>
+          <div class="user-name">Admin</div>
+          <div class="user-role">Administrador</div>
+        </div>
+      </div>
+      <a href="index.html" class="logout-link">→ Sair do sistema</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <div class="topbar-title">Cadastrar Acolhido</div>
+        <div class="topbar-subtitle"><a href="acolhidos.html" style="color:var(--terra);text-decoration:none;">← Voltar para Acolhidos</a></div>
+      </div>
+    </div>
+
+    <div class="section-box" style="max-width:700px;">
+      <div class="section-box-header">
+        <h3>Dados do Participante</h3>
+        <span style="font-size:12px;color:var(--text-muted);">* Campo obrigatório</span>
+      </div>
+
+      <div class="form-grid">
+        <div class="form-group full">
+          <label>Nome Completo *</label>
+          <input type="text" placeholder="Nome completo do participante" />
+        </div>
+        <div class="form-group">
+          <label>CPF</label>
+          <input type="text" placeholder="000.000.000-00" />
+        </div>
+        <div class="form-group">
+          <label>Contato (Telefone)</label>
+          <input type="text" placeholder="(11) 99999-9999" />
+        </div>
+        <div class="form-group">
+          <label>Nome da Mãe</label>
+          <input type="text" placeholder="Nome da mãe" />
+        </div>
+        <div class="form-group">
+          <label>Data de Nascimento</label>
+          <input type="date" />
+        </div>
+        <div class="form-group full">
+          <label>Endereço</label>
+          <input type="text" placeholder="Rua, número, bairro, cidade" />
+        </div>
+        <div class="form-group full">
+          <label>Observações iniciais</label>
+          <textarea placeholder="Informações relevantes para o processo de acolhimento..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Prioridade de Atendimento</label>
+          <select>
+            <option>Selecione...</option>
+            <option>Alta</option>
+            <option>Média</option>
+            <option>Baixa</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Status Inicial</label>
+          <select>
+            <option>Em espera</option>
+            <option>Acolhido</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-footer">
+        <a href="acolhidos.html" class="btn btn-primary">Cadastrar Acolhido</a>
+        <a href="acolhidos.html" class="btn btn-secondary">Cancelar</a>
+      </div>
+    </div>
+  </main>
+
+</div>
+</body>
+</html>

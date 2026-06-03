@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terra da Esperança – Relatórios</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="logo-icon">🌱</div>
+      <h2>Terra da<br>Esperança</h2>
+      <span>Sistema de Gestão</span>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-section">Principal</div>
+      <a href="dashboard.html"  class="nav-link"><span class="icon">📊</span> Dashboard</a>
+      <a href="acolhidos.html"  class="nav-link"><span class="icon">🏠</span> Acolhidos</a>
+      <a href="voluntarios.html" class="nav-link"><span class="icon">👥</span> Voluntários</a>
+      <a href="relatorios.html" class="nav-link active"><span class="icon">📋</span> Relatórios</a>
+      <div class="nav-section">Operacional</div>
+      <a href="escala.html"      class="nav-link"><span class="icon">📅</span> Escala</a>
+      <a href="prestadores.html" class="nav-link"><span class="icon">🔧</span> Prestadores</a>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <div class="user-avatar">AD</div>
+        <div>
+          <div class="user-name">Admin</div>
+          <div class="user-role">Administrador</div>
+        </div>
+      </div>
+      <a href="index.html" class="logout-link">→ Sair do sistema</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <div class="topbar-title">Relatórios Diários</div>
+        <div class="topbar-subtitle">Registros de acompanhamento dos participantes</div>
+      </div>
+      <a href="novo-relatorio.html" class="btn btn-primary">+ Novo Relatório</a>
+    </div>
+
+    <!-- Filtros -->
+    <div style="display:flex;gap:12px;margin-bottom:20px;align-items:center;flex-wrap:wrap;">
+      <input type="text" placeholder="🔍  Buscar por acolhido..." style="width:220px;"/>
+      <input type="date" value="2026-04-23" style="width:160px;"/>
+      <select style="width:180px;">
+        <option>Todos os voluntários</option>
+        <option>Ana Paula Rocha</option>
+        <option>Carlos Eduardo Melo</option>
+        <option>Roberto Figueiredo</option>
+      </select>
+    </div>
+
+    <div class="section-box">
+      <div class="section-box-header">
+        <h3>Relatórios — 23/04/2026</h3>
+        <span style="font-size:13px;color:var(--text-muted);">6 registros encontrados</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Acolhido</th>
+            <th>Voluntário Responsável</th>
+            <th>Detalhamento</th>
+            <th>Conclusão</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>23/04/2026</td>
+            <td><code>#AC-0024</code> João Carlos</td>
+            <td>Ana Paula Rocha</td>
+            <td>Participou das atividades matinais. Demonstrou melhora no humor e interação com outros acolhidos.</td>
+            <td><span class="badge badge-ativo">Evolução positiva</span></td>
+          </tr>
+          <tr>
+            <td>23/04/2026</td>
+            <td><code>#AC-0023</code> Maria Aparecida</td>
+            <td>Carlos Eduardo Melo</td>
+            <td>Realizou sessão com psicóloga. Apresentou resistência inicial mas terminou bem a consulta.</td>
+            <td><span class="badge badge-espera">Acompanhar</span></td>
+          </tr>
+          <tr>
+            <td>23/04/2026</td>
+            <td><code>#AC-0020</code> Lucas Henrique</td>
+            <td>Roberto Figueiredo</td>
+            <td>Check-up médico de rotina. Pressão arterial normalizada. Sem intercorrências.</td>
+            <td><span class="badge badge-ativo">Estável</span></td>
+          </tr>
+          <tr>
+            <td>22/04/2026</td>
+            <td><code>#AC-0024</code> João Carlos</td>
+            <td>Ana Paula Rocha</td>
+            <td>Sessão de terapia em grupo. Compartilhou experiências com colegas pela primeira vez.</td>
+            <td><span class="badge badge-ativo">Evolução positiva</span></td>
+          </tr>
+          <tr>
+            <td>22/04/2026</td>
+            <td><code>#AC-0023</code> Maria Aparecida</td>
+            <td>Júlia Lopes Ferraz</td>
+            <td>Fisioterapia realizada. Exercícios de mobilidade. Paciente colaborativa.</td>
+            <td><span class="badge badge-ativo">Estável</span></td>
+          </tr>
+          <tr>
+            <td>22/04/2026</td>
+            <td><code>#AC-0022</code> Pedro Oliveira</td>
+            <td>Carlos Eduardo Melo</td>
+            <td>Reunião de preparação para reinserção social. Documentação em andamento.</td>
+            <td><span class="badge badge-acolhido">Em processo</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+</div>
+</body>
+</html>

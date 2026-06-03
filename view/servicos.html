@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terra da Esperança – Serviços Prestados</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="logo-icon">🌱</div>
+      <h2>Terra da<br>Esperança</h2>
+      <span>Sistema de Gestão</span>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-section">Principal</div>
+      <a href="dashboard.html"  class="nav-link"><span class="icon">📊</span> Dashboard</a>
+      <a href="acolhidos.html"  class="nav-link"><span class="icon">🏠</span> Acolhidos</a>
+      <a href="voluntarios.html" class="nav-link"><span class="icon">👥</span> Voluntários</a>
+      <a href="relatorios.html" class="nav-link"><span class="icon">📋</span> Relatórios</a>
+      <div class="nav-section">Operacional</div>
+      <a href="escala.html"      class="nav-link"><span class="icon">📅</span> Escala</a>
+      <a href="prestadores.html" class="nav-link active"><span class="icon">🔧</span> Prestadores</a>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <div class="user-avatar">AD</div>
+        <div>
+          <div class="user-name">Admin</div>
+          <div class="user-role">Administrador</div>
+        </div>
+      </div>
+      <a href="index.html" class="logout-link">→ Sair do sistema</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <div class="topbar-title">Prestadores de Serviço</div>
+        <div class="topbar-subtitle">Empresas e serviços prestados à instituição</div>
+      </div>
+      <a href="cadastrar-prestador.html" class="btn btn-primary">+ Novo Prestador</a>
+    </div>
+
+    <!-- Tabs -->
+    <div style="display:flex;gap:4px;margin-bottom:24px;border-bottom:2px solid var(--areia-dark);">
+      <a href="prestadores.html" style="padding:10px 18px;font-size:14px;font-weight:400;color:var(--text-muted);text-decoration:none;">Prestadores</a>
+      <a href="servicos.html"    style="padding:10px 18px;font-size:14px;font-weight:500;color:var(--terra);border-bottom:2px solid var(--terra);margin-bottom:-2px;text-decoration:none;">Serviços Registrados</a>
+    </div>
+
+    <div class="section-box">
+      <div class="section-box-header">
+        <h3>Histórico de Serviços</h3>
+        <a href="#" class="btn btn-verde btn-sm">+ Registrar Serviço</a>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Empresa</th>
+            <th>Tipo</th>
+            <th>Detalhamento</th>
+            <th>Data</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>#SRV-007</code></td>
+            <td>TechSolv Informática</td>
+            <td>TI</td>
+            <td>Manutenção dos computadores da área de estudos e configuração de rede Wi-Fi.</td>
+            <td>18/04/2026</td>
+          </tr>
+          <tr>
+            <td><code>#SRV-006</code></td>
+            <td>Elétrica Segura ME</td>
+            <td>Elétrica</td>
+            <td>Troca de quadro elétrico do dormitório 2. Instalação de tomadas novas.</td>
+            <td>10/04/2026</td>
+          </tr>
+          <tr>
+            <td><code>#SRV-005</code></td>
+            <td>CleanPro Higienização</td>
+            <td>Limpeza</td>
+            <td>Higienização completa das clínicas multidisciplinares. Produto antifúngico aplicado.</td>
+            <td>05/04/2026</td>
+          </tr>
+          <tr>
+            <td><code>#SRV-004</code></td>
+            <td>Construbem Obras</td>
+            <td>Predial</td>
+            <td>Reforma do telhado da cozinha e reparo de infiltração no banheiro masculino.</td>
+            <td>28/03/2026</td>
+          </tr>
+          <tr>
+            <td><code>#SRV-003</code></td>
+            <td>TechSolv Informática</td>
+            <td>TI</td>
+            <td>Instalação de sistema de controle de acesso e câmeras de segurança.</td>
+            <td>15/03/2026</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+</div>
+</body>
+</html>

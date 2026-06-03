@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terra da Esperança – Escala</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="logo-icon">🌱</div>
+      <h2>Terra da<br>Esperança</h2>
+      <span>Sistema de Gestão</span>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-section">Principal</div>
+      <a href="dashboard.html"  class="nav-link"><span class="icon">📊</span> Dashboard</a>
+      <a href="acolhidos.html"  class="nav-link"><span class="icon">🏠</span> Acolhidos</a>
+      <a href="voluntarios.html" class="nav-link"><span class="icon">👥</span> Voluntários</a>
+      <a href="relatorios.html" class="nav-link"><span class="icon">📋</span> Relatórios</a>
+      <div class="nav-section">Operacional</div>
+      <a href="escala.html"      class="nav-link active"><span class="icon">📅</span> Escala</a>
+      <a href="prestadores.html" class="nav-link"><span class="icon">🔧</span> Prestadores</a>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <div class="user-avatar">AD</div>
+        <div>
+          <div class="user-name">Admin</div>
+          <div class="user-role">Administrador</div>
+        </div>
+      </div>
+      <a href="index.html" class="logout-link">→ Sair do sistema</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <div class="topbar-title">Escala de Voluntários</div>
+        <div class="topbar-subtitle">Semana de 21 a 27 de Abril de 2026</div>
+      </div>
+      <a href="registrar-escala.html" class="btn btn-primary">+ Registrar Horário</a>
+    </div>
+
+    <div class="section-box">
+      <div class="section-box-header">
+        <h3>Visão Semanal</h3>
+        <div style="display:flex;gap:8px;">
+          <button class="btn btn-secondary btn-sm">← Semana anterior</button>
+          <button class="btn btn-secondary btn-sm">Próxima semana →</button>
+        </div>
+      </div>
+
+      <div class="week-grid">
+        <div class="day-col">
+          <div class="day-header">Seg</div>
+          <div class="day-date">21</div>
+          <div class="day-slots">
+            <div class="slot">
+              <div class="slot-name">Ana Rocha</div>
+              <div class="slot-time">08:00 – 14:00</div>
+            </div>
+            <div class="slot slot-verde">
+              <div class="slot-name">Carlos Melo</div>
+              <div class="slot-time">08:00 – 17:00</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-col">
+          <div class="day-header">Ter</div>
+          <div class="day-date">22</div>
+          <div class="day-slots">
+            <div class="slot slot-verde">
+              <div class="slot-name">Júlia Lopes</div>
+              <div class="slot-time">09:00 – 15:00</div>
+            </div>
+            <div class="slot slot-gold">
+              <div class="slot-name">Roberto Fig.</div>
+              <div class="slot-time">13:00 – 18:00</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-col">
+          <div class="day-header" style="background:var(--terra);">Qua</div>
+          <div class="day-date">23</div>
+          <div class="day-slots">
+            <div class="slot">
+              <div class="slot-name">Ana Rocha</div>
+              <div class="slot-time">08:00 – 14:00</div>
+            </div>
+            <div class="slot slot-verde">
+              <div class="slot-name">Carlos Melo</div>
+              <div class="slot-time">08:00 – 17:00</div>
+            </div>
+            <div class="slot slot-gold">
+              <div class="slot-name">Roberto Fig.</div>
+              <div class="slot-time">13:00 – 18:00</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-col">
+          <div class="day-header">Qui</div>
+          <div class="day-date">24</div>
+          <div class="day-slots">
+            <div class="slot slot-verde">
+              <div class="slot-name">Júlia Lopes</div>
+              <div class="slot-time">09:00 – 15:00</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-col">
+          <div class="day-header">Sex</div>
+          <div class="day-date">25</div>
+          <div class="day-slots">
+            <div class="slot">
+              <div class="slot-name">Ana Rocha</div>
+              <div class="slot-time">08:00 – 12:00</div>
+            </div>
+            <div class="slot slot-verde">
+              <div class="slot-name">Carlos Melo</div>
+              <div class="slot-time">08:00 – 17:00</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-col">
+          <div class="day-header">Sáb</div>
+          <div class="day-date">26</div>
+          <div class="day-slots">
+            <div class="slot slot-gold">
+              <div class="slot-name">Roberto Fig.</div>
+              <div class="slot-time">09:00 – 13:00</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-col">
+          <div class="day-header">Dom</div>
+          <div class="day-date">27</div>
+          <div class="day-slots">
+            <div style="text-align:center;padding:10px 0;font-size:11px;color:var(--text-muted);">Sem escala</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Legenda -->
+    <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:4px;">
+      <span style="font-size:12px;color:var(--text-muted);">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--terra);margin-right:4px;"></span>
+        Psicologia
+      </span>
+      <span style="font-size:12px;color:var(--text-muted);">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--verde);margin-right:4px;"></span>
+        Assistência Social / Fisioterapia
+      </span>
+      <span style="font-size:12px;color:var(--text-muted);">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#c8922a;margin-right:4px;"></span>
+        Medicina
+      </span>
+    </div>
+  </main>
+
+</div>
+</body>
+</html>

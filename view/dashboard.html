@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terra da Esperança – Dashboard</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="logo-icon">🌱</div>
+      <h2>Terra da<br>Esperança</h2>
+      <span>Sistema de Gestão</span>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-section">Principal</div>
+      <a href="dashboard.html" class="nav-link active"><span class="icon">📊</span> Dashboard</a>
+      <a href="acolhidos.html"  class="nav-link"><span class="icon">🏠</span> Acolhidos</a>
+      <a href="voluntarios.html" class="nav-link"><span class="icon">👥</span> Voluntários</a>
+      <a href="relatorios.html" class="nav-link"><span class="icon">📋</span> Relatórios</a>
+
+      <div class="nav-section">Operacional</div>
+      <a href="escala.html"      class="nav-link"><span class="icon">📅</span> Escala</a>
+      <a href="prestadores.html" class="nav-link"><span class="icon">🔧</span> Prestadores</a>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <div class="user-avatar">AD</div>
+        <div>
+          <div class="user-name">Admin</div>
+          <div class="user-role">Administrador</div>
+        </div>
+      </div>
+      <a href="index.html" class="logout-link">→ Sair do sistema</a>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <div class="topbar-title">Dashboard</div>
+        <div class="topbar-subtitle">Visão geral da instituição · Abril 2026</div>
+      </div>
+    </div>
+
+    <!-- Cards de métricas -->
+    <div class="cards-grid">
+      <div class="card card-accent">
+        <div class="card-icon">🏠</div>
+        <div class="card-value">24</div>
+        <div class="card-label">Acolhidos ativos</div>
+      </div>
+      <div class="card card-verde">
+        <div class="card-icon">👥</div>
+        <div class="card-value">18</div>
+        <div class="card-label">Voluntários ativos</div>
+      </div>
+      <div class="card card-gold">
+        <div class="card-icon">⏳</div>
+        <div class="card-value">7</div>
+        <div class="card-label">Em fila de espera</div>
+      </div>
+      <div class="card card-blue">
+        <div class="card-icon">📋</div>
+        <div class="card-value">142</div>
+        <div class="card-label">Relatórios este mês</div>
+      </div>
+    </div>
+
+    <!-- Últimos acolhidos -->
+    <div class="section-box">
+      <div class="section-box-header">
+        <h3>Últimos Acolhidos Cadastrados</h3>
+        <a href="acolhidos.html" class="btn btn-secondary btn-sm">Ver todos</a>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Registro</th>
+            <th>Nome</th>
+            <th>Entrada</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>#AC-0024</code></td>
+            <td>João Carlos Ferreira</td>
+            <td>20/04/2026</td>
+            <td><span class="badge badge-acolhido">Acolhido</span></td>
+          </tr>
+          <tr>
+            <td><code>#AC-0023</code></td>
+            <td>Maria Aparecida Santos</td>
+            <td>15/04/2026</td>
+            <td><span class="badge badge-acolhido">Acolhido</span></td>
+          </tr>
+          <tr>
+            <td><code>#AC-0022</code></td>
+            <td>Pedro Oliveira Lima</td>
+            <td>10/04/2026</td>
+            <td><span class="badge badge-ativo">Reinserido</span></td>
+          </tr>
+          <tr>
+            <td><code>#AC-0021</code></td>
+            <td>Francisca Nunes Costa</td>
+            <td>02/04/2026</td>
+            <td><span class="badge badge-espera">Em espera</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Voluntários hoje -->
+    <div class="section-box">
+      <div class="section-box-header">
+        <h3>Voluntários em Escala Hoje</h3>
+        <a href="escala.html" class="btn btn-secondary btn-sm">Ver escala</a>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Função</th>
+            <th>Horário</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dra. Ana Paula Rocha</td>
+            <td>Psicóloga</td>
+            <td>08:00 – 14:00</td>
+            <td><span class="badge badge-ativo">Presente</span></td>
+          </tr>
+          <tr>
+            <td>Carlos Eduardo Melo</td>
+            <td>Assistente Social</td>
+            <td>08:00 – 17:00</td>
+            <td><span class="badge badge-ativo">Presente</span></td>
+          </tr>
+          <tr>
+            <td>Dr. Roberto Figueiredo</td>
+            <td>Médico</td>
+            <td>13:00 – 18:00</td>
+            <td><span class="badge badge-espera">Aguardado</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+</div>
+</body>
+</html>
