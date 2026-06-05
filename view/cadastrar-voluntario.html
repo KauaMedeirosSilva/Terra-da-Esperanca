@@ -87,16 +87,20 @@
           </div>
           <div class="form-group">
             <label>Login *</label>
-            <input type="text" id="login" placeholder="Gerado automaticamente" disabled style="opacity:0.6;" />
+            <input type="text" id="login" placeholder="Gerado automaticamente" readonly style="opacity:0.6;" />
           </div>
         </div>
         
         <div style="padding: 0 24px 16px; font-size:13px; color:var(--text-muted);">
-          ℹ️ O login será gerado automaticamente com base no nome do voluntário. A senha provisória será enviada ao e-mail cadastrado.
+          ℹ️ O login será gerado automaticamente com base no nome do voluntário. A senha provisória, neste MVP, será o CPF informado.
         </div>
+        <div style="padding: 0 24px 16px; font-size:13px; color:var(--text-muted);">
+          Os dados ficam salvos neste navegador usando armazenamento local.
+        </div>
+        <div id="cadastro_feedback" style="display:none;margin:0 24px 16px;"></div>
         
         <div class="form-footer">
-          <button type="submit" class="btn btn-primary"> Cadastrar Voluntário </button>
+          <button type="submit" id="btn_cadastrar_voluntario" class="btn btn-primary"> Cadastrar Voluntário </button>
           <a href="voluntarios.html" class="btn btn-secondary">Cancelar</a>
         </div>
       </div>
@@ -104,6 +108,7 @@
   </main>
 
 </div>
-<script type="module" src="../controller/cadastro_voluntario.js"></script>
+<script src="../services/user_login.js"></script>
+<script src="../controller/cadastro_voluntario.js"></script>
 </body>
 </html>

@@ -20,26 +20,28 @@
 
     <h2>Bem-vindo de volta</h2>
     <p class="subtitle">Faça login para acessar o sistema</p>
+    <p style="margin-top:-8px;margin-bottom:18px;font-size:13px;color:var(--text-muted);">Use o login gerado no cadastro e a senha provisória definida no MVP.</p>
+    <p style="margin-top:-10px;margin-bottom:18px;font-size:13px;color:var(--text-muted);">Os dados ficam salvos neste navegador usando armazenamento local.</p>
+    <p style="margin-top:-10px;margin-bottom:18px;font-size:13px;color:var(--text-muted);">Login padrão: <strong>Admin</strong> | Senha: <strong>123456</strong></p>
 
-    <div class="login-form">
+    <form id="login_form" class="login-form">
       <div class="form-group">
         <label>Login</label>
-        <input type="text" placeholder="Seu nome de usuário" />
+        <input type="text" id="login_usuario" placeholder="Seu nome de usuário" autocomplete="username" required />
       </div>
       <div class="form-group">
         <label>Senha</label>
-        <input type="password" placeholder="••••••••" />
+        <input type="password" id="senha_usuario" placeholder="••••••••" autocomplete="current-password" required />
       </div>
-      <div class="form-group">
-        <label>Token de Autenticação</label>
-        <input type="text" placeholder="Código enviado por email" />
-      </div>
-      <a href="dashboard.html" class="btn btn-primary">Entrar no Sistema</a>
-    </div>
+      <p id="login_feedback" style="display:none;min-height:20px;margin:0;"></p>
+      <button type="submit" id="btn_entrar_sistema" class="btn btn-primary">Entrar no Sistema</button>
+    </form>
 
     <p class="forgot-link">
       Esqueceu sua senha? <a href="recuperar-senha.html">Recuperar acesso</a>
     </p>
   </div>
+  <script src="../services/user_login.js"></script>
+  <script src="../controller/login.js"></script>
 </body>
 </html>

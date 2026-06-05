@@ -1,0 +1,17 @@
+CREATE TABLE usuarios (
+    id                  INT PRIMARY KEY AUTO_INCREMENT,
+    nome                VARCHAR(150) NOT NULL,
+    cpf                 CHAR(11) NOT NULL UNIQUE,
+    data_nascimento     DATE NOT NULL,
+    telefone            CHAR(11) NOT NULL,
+    email               VARCHAR(150) NOT NULL UNIQUE,
+    formacao            VARCHAR(120),
+    nivel_acesso_id     INT NOT NULL,
+    login               VARCHAR(80) NOT NULL UNIQUE,
+    senha               VARCHAR(255) NOT NULL,
+    criado_em           TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT fk_usuario_nivel
+        FOREIGN KEY (nivel_acesso_id)
+        REFERENCES niveis_acesso(id)
+);
